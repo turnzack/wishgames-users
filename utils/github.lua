@@ -1,7 +1,9 @@
+-- utils/github.lua
 local https = require("ssl.https")
 local ltn12 = require("ltn12")
 local json = require("dkjson") -- Assurez-vous d'avoir une bibliothèque JSON, comme dkjson
 local mime = require("mime")   -- Pour encoder en base64
+local crypto = require("utils.crypto")
 
 local github = {}
 local GITHUB_API_URL = "https://api.github.com"
@@ -32,7 +34,7 @@ end
 -- Fonction pour inscrire un utilisateur
 function github.signup(username, email, password)
     -- Hasher le mot de passe
-    local hashed_password = hash_password(password)
+    local hashed_password = crypto.hash_password(password)
     local path = string.format("/repos/%s/%s/contents/users/%s.json", REPO_OWNER, REPO_NAME, username)
     local user_data = json.encode({username = username, email = email, password = hashed_password})
     local content = mime.b64(user_data)
@@ -72,7 +74,7 @@ function github.authenticate(username, password)
         local response_data = json.decode(table.concat(response_body))
         local user_data = json.decode(mime.unb64(response_data.content))
         -- Vérifier le mot de passe haché
-        if user_data and user_data.password == hash_password(password) then
+        if user_data and user_data.password == crypto.hash_password(password) then
             return true, "Authentification réussie!"
         else
             return false, "Échec de l'authentification: Mot de passe incorrect."
