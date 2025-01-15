@@ -1,0 +1,121 @@
+{
+    "title": "Formulaire de Vœu",
+    "description": "Une carte interactive pour soumettre vos vœux avec des options détaillées et personnalisées.",
+    "fields": [
+        {
+            "section": "Informations de base",
+            "fields": [
+                {
+                    "name": "Nom complet",
+                    "type": "text",
+                    "placeholder": "Exemple : Jean Dupont",
+                    "icon": "👤"
+                },
+                {
+                    "name": "Adresse e-mail",
+                    "type": "email",
+                    "placeholder": "Exemple : jean.dupont@example.com",
+                    "icon": "📧"
+                }
+            ]
+        },
+        {
+            "section": "Type de Vœu",
+            "fields": [
+                { "label": "Expérience unique", "type": "checkbox", "icon": "🌍" },
+                { "label": "Événement spécial", "type": "checkbox", "icon": "🎉, 🎤" },
+                { "label": "Aide ou soutien", "type": "checkbox", "icon": "🤝" },
+                { "label": "Personnel du projet", "type": "checkbox", "icon": "🎨" },
+                { "label": "Autre", "type": "checkbox", "icon": "❓" }
+            ]
+        },
+        {
+            "section": "Détails du Vœu",
+            "fields": [
+                {
+                    "name": "Description du vœu",
+                    "type": "textarea",
+                    "placeholder": "Décrivez votre vœu ici.",
+                    "icon": "📝"
+                },
+                {
+                    "name": "Destination idéale",
+                    "type": "text",
+                    "placeholder": "Exemple : Japon, Islande, Afrique.",
+                    "icon": "📍"
+                },
+                {
+                    "name": "Durée ou période idéale",
+                    "type": "date",
+                    "icon": "📅"
+                }
+            ]
+        },
+        {
+            "section": "Champs Adaptatifs",
+            "subsections": [
+                {
+                    "title": "Expérience unique",
+                    "fields": [
+                        { "label": "Voyage", "type": "checkbox", "icon": "✈" },
+                        { "label": "UN", "type": "text", "icon": "UN" }
+                    ]
+                },
+                {
+                    "title": "Événement spécial",
+                    "fields": [
+                        { "label": "Festival", "type": "checkbox", "icon": "C" },
+                        { "label": "Rencontre", "type": "checkbox", "icon": "🤝" }
+                    ]
+                },
+                {
+                    "title": "Aide ou soutien",
+                    "fields": [
+                        { "label": "Mentorat", "type": "checkbox", "icon": "👨‍🏫, 🧠" },
+                        { "label": "Ressources", "type": "checkbox", "icon": "📦, 💰" },
+                        { "label": "Conseils", "type": "checkbox", "icon": "💬, 🛠️" }
+                    ]
+                },
+                {
+                    "title": "Personnel du projet",
+                    "fields": [
+                        { "label": "Créatif", "type": "checkbox", "icon": "🎨, 🎥" },
+                        { "label": "Professionnel", "type": "checkbox", "icon": "💼, 📊" },
+                        { "label": "Réseaux sociaux", "type": "checkbox", "icon": "🤲, ❤️" }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Aide de l'IA",
+            "fields": [
+                { "label": "Conseils et suggestions", "type": "radio", "icon": "🤖, 💡, 📜" },
+                { "label": "Fenêtre contextuelle", "type": "radio", "icon": "🔍, 📑" }
+            ]
+        },
+        {
+            "section": "Précisions Supplémentaires",
+            "fields": [
+                {
+                    "name": "Détails additionnels",
+                    "type": "textarea",
+                    "placeholder": "Ajoutez des informations si nécessaire.",
+                    "icon": "🖋️, 🗂️"
+                }
+            ]
+        },
+        {
+            "section": "Conditions et Soumission",
+            "fields": [
+                { "label": "Partage des vœux", "type": "checkbox", "icon": "🌐, 🤝" },
+                { "label": "Vérification de sécurité", "type": "checkbox", "icon": "🔒, 🛡️" },
+                {
+                    "name": "Soumettre la demande",
+                    "type": "submit",
+                    "icon": "📤, 🚀",
+                    "successMessage": "Votre vœu a été soumis avec succès!"
+                }
+            ]
+        }
+    ]
+}
