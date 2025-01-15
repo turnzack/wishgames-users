@@ -96,7 +96,12 @@
         {
             "section": "Précisions Supplémentaires",
             "fields": [
-                { "name": "Détails additionnels", "type": "textarea", "placeholder": "Ajoutez des informations si nécessaire.", "icon": "🖋️, 🗂️" }
+                {
+                    "name": "Détails additionnels",
+                    "type": "textarea",
+                    "placeholder": "Ajoutez des informations si nécessaire.",
+                    "icon": "🖋️, 🗂️"
+                }
             ]
         },
         {
@@ -108,7 +113,9 @@
                     "name": "Soumettre la demande",
                     "type": "submit",
                     "icon": "📤, 🚀",
-                    "successMessage": "Votre vœu a été so
-
+                    "successMessage": "Votre vœu a été soumis avec succès!"
+                }
+            ]
+        }
     ]
 }
