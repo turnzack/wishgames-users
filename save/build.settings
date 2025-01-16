@@ -1,0 +1,23 @@
+-- build.settings - Configuration de build pour les plateformes
+
+settings = {
+    orientation = {
+        default = "portrait",
+        supported = { "portrait" }
+    },
+    
+    iphone = {
+        plist = {
+            UIStatusBarHidden = true,
+            UIViewControllerBasedStatusBarAppearance = false
+        }
+    },
+    
+    android = {
+        versionCode = "1",
+        versionName = "1.0",
+        usesPermissions = {
+            "android.permission.INTERNET",
+        }
+    }
+}
