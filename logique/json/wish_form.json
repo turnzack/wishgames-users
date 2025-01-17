@@ -9,24 +9,44 @@
                     "name": "Nom complet",
                     "type": "text",
                     "placeholder": "Exemple : Jean Dupont",
-                    "icon": "👤"
+                    "description": "Permet à l'utilisateur d'entrer son nom"
                 },
                 {
                     "name": "Adresse e-mail",
                     "type": "email",
                     "placeholder": "Exemple : jean.dupont@example.com",
-                    "icon": "📧"
+                    "description": "Permet à l'utilisateur d'entrer une adresse e-mail"
                 }
             ]
         },
         {
             "section": "Type de Vœu",
             "fields": [
-                { "label": "Expérience unique", "type": "checkbox", "icon": "🌍" },
-                { "label": "Événement spécial", "type": "checkbox", "icon": "🎉, 🎤" },
-                { "label": "Aide ou soutien", "type": "checkbox", "icon": "🤝" },
-                { "label": "Personnel du projet", "type": "checkbox", "icon": "🎨" },
-                { "label": "Autre", "type": "checkbox", "icon": "❓" }
+                {
+                    "name": "Expérience unique",
+                    "type": "checkbox",
+                    "description": "Permet à l'utilisateur de sélectionner un ou plusieurs types de vœux parmi les options"
+                },
+                {
+                    "name": "Événement spécial",
+                    "type": "checkbox",
+                    "description": "Permet à l'utilisateur de sélectionner un ou plusieurs types de vœux parmi les options"
+                },
+                {
+                    "name": "Aide ou soutien",
+                    "type": "checkbox",
+                    "description": "Permet à l'utilisateur de sélectionner un ou plusieurs types de vœux parmi les options"
+                },
+                {
+                    "name": "Personnel du projet",
+                    "type": "checkbox",
+                    "description": "Permet à l'utilisateur de sélectionner un ou plusieurs types de vœux parmi les options"
+                },
+                {
+                    "name": "Autre",
+                    "type": "checkbox",
+                    "description": "Permet à l'utilisateur de sélectionner un ou plusieurs types de vœux parmi les options"
+                }
             ]
         },
         {
@@ -35,19 +55,19 @@
                 {
                     "name": "Description du vœu",
                     "type": "textarea",
-                    "placeholder": "Décrivez votre vœu ici.",
-                    "icon": "📝"
+                    "placeholder": "Décrivez votre vœu ici",
+                    "description": "Permet à l'utilisateur de saisir du texte détaillé"
                 },
                 {
                     "name": "Destination idéale",
                     "type": "text",
-                    "placeholder": "Exemple : Japon, Islande, Afrique.",
-                    "icon": "📍"
+                    "placeholder": "Exemple : Japon, Islande, Afrique",
+                    "description": "Permet à l'utilisateur de saisir du texte libre"
                 },
                 {
                     "name": "Durée ou période idéale",
                     "type": "date",
-                    "icon": "📅"
+                    "description": "Permet à l'utilisateur de sélectionner une date pour la durée ou la période idéale"
                 }
             ]
         },
@@ -57,31 +77,71 @@
                 {
                     "title": "Expérience unique",
                     "fields": [
-                        { "label": "Voyage", "type": "checkbox", "icon": "✈" },
-                        { "label": "UN", "type": "text", "icon": "UN" }
+                        {
+                            "name": "Voyage",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de sélectionner un choix lié à une expérience de voyage"
+                        },
+                        {
+                            "name": "UN",
+                            "type": "text",
+                            "description": "Permet à l'utilisateur de saisir des détails sur une expérience unique"
+                        }
                     ]
                 },
                 {
                     "title": "Événement spécial",
                     "fields": [
-                        { "label": "Festival", "type": "checkbox", "icon": "C" },
-                        { "label": "Rencontre", "type": "checkbox", "icon": "🤝" }
+                        {
+                            "name": "Festival",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de sélectionner un choix pour un événement spécial comme un festival"
+                        },
+                        {
+                            "name": "Rencontre",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de sélectionner un choix pour un événement spécial comme une rencontre"
+                        }
                     ]
                 },
                 {
                     "title": "Aide ou soutien",
                     "fields": [
-                        { "label": "Mentorat", "type": "checkbox", "icon": "👨‍🏫, 🧠" },
-                        { "label": "Ressources", "type": "checkbox", "icon": "📦, 💰" },
-                        { "label": "Conseils", "type": "checkbox", "icon": "💬, 🛠️" }
+                        {
+                            "name": "Mentorat",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de cocher pour indiquer un besoin en mentorat"
+                        },
+                        {
+                            "name": "Ressources",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de cocher pour indiquer un besoin en ressources"
+                        },
+                        {
+                            "name": "Conseils",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de cocher pour indiquer un besoin en conseils"
+                        }
                     ]
                 },
                 {
                     "title": "Personnel du projet",
                     "fields": [
-                        { "label": "Créatif", "type": "checkbox", "icon": "🎨, 🎥" },
-                        { "label": "Professionnel", "type": "checkbox", "icon": "💼, 📊" },
-                        { "label": "Réseaux sociaux", "type": "checkbox", "icon": "🤲, ❤️" }
+                        {
+                            "name": "Créatif",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de cocher s'il souhaite du personnel créatif pour son projet"
+                        },
+                        {
+                            "name": "Professionnel",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de cocher s'il souhaite du personnel professionnel pour son projet"
+                        },
+                        {
+                            "name": "Réseaux sociaux",
+                            "type": "checkbox",
+                            "description": "Permet à l'utilisateur de cocher s'il souhaite un expert en réseaux sociaux pour son projet"
+                        }
                     ]
                 }
             ]
@@ -89,8 +149,16 @@
         {
             "section": "Aide de l'IA",
             "fields": [
-                { "label": "Conseils et suggestions", "type": "radio", "icon": "🤖, 💡, 📜" },
-                { "label": "Fenêtre contextuelle", "type": "radio", "icon": "🔍, 📑" }
+                {
+                    "name": "Conseils et suggestions",
+                    "type": "radio",
+                    "description": "Permet à l'utilisateur de choisir entre 'Conseils' ou 'Suggestions' pour l'IA"
+                },
+                {
+                    "name": "Fenêtre contextuelle",
+                    "type": "radio",
+                    "description": "Permet à l'utilisateur de choisir entre 'Fenêtre contextuelle' ou 'Aide instantanée' pour l'IA"
+                }
             ]
         },
         {
@@ -99,20 +167,27 @@
                 {
                     "name": "Détails additionnels",
                     "type": "textarea",
-                    "placeholder": "Ajoutez des informations si nécessaire.",
-                    "icon": "🖋️, 🗂️"
+                    "description": "Permet à l'utilisateur d'ajouter des informations supplémentaires"
                 }
             ]
         },
         {
             "section": "Conditions et Soumission",
             "fields": [
-                { "label": "Partage des vœux", "type": "checkbox", "icon": "🌐, 🤝" },
-                { "label": "Vérification de sécurité", "type": "checkbox", "icon": "🔒, 🛡️" },
+                {
+                    "name": "Partage des vœux",
+                    "type": "checkbox",
+                    "description": "Permet à l'utilisateur de cocher s'il accepte de partager son vœu"
+                },
+                {
+                    "name": "Vérification de sécurité",
+                    "type": "checkbox",
+                    "description": "Permet à l'utilisateur de cocher pour vérifier qu'il n'est pas un robot"
+                },
                 {
                     "name": "Soumettre la demande",
                     "type": "submit",
-                    "icon": "📤, 🚀",
+                    "description": "Permet à l'utilisateur de soumettre la demande une fois le formulaire rempli",
                     "successMessage": "Votre vœu a été soumis avec succès!"
                 }
             ]
