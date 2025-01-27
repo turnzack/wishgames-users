@@ -1,1 +1,17 @@
+import csv
 
+# Données à écrire dans le fichier CSV
+data = [
+    ["nom", "email", "mot de passe", "date", "Tirage", "status", "voeu", "description", "likeCounter", "voteCounter", "participateCounter"],
+    ["PAT", "pat@gmail.com", "1234wqaQ!", "25/1/2025", "", "actif", "VDKVKNKJNK?", "K?NKJNMOJKJSQKNV", "3,0", "0,0", "0,0"],
+    ["paz", "paz@gmail.com", "1234wqaQ!", "25/1/2025", "", "tiré", "RESTO 4ETOILE", "MAGER DANS UN RESTO 4ETOILE", "3,0", "2,0", "0,0"],
+    ["AQ", "aq@gmail.com", "1234wqaQ!", "26/1/2025", "", "actif", "NJKNKNKLMJ", "? ?KNKNLKN", "0,0", "0,0", "0,0"]
+]
+
+# Écrire les données dans un fichier CSV
+csv_file_path = 'users.csv'
+with open(csv_file_path, mode='w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print(f"Fichier CSV '{csv_file_path}' créé avec succès.")
